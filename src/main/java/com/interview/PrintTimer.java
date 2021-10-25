@@ -4,6 +4,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.TimerTask;
 
@@ -17,7 +18,7 @@ class PrintTimer extends TimerTask {
         /**
          * schedule an API call then print emails after deserializing json response
          */
-        System.out.println("Started new Iteration ...") ;
+        System.out.println("Started new Iteration at: " + new Date().toString()) ;
         // create an Http client
         HttpClient client = HttpClient.newHttpClient();
         // build request
