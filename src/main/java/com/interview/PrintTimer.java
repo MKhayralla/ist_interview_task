@@ -39,7 +39,7 @@ class PrintTimer extends TimerTask {
                 // convert to json object
                 JsonObject obj = ite.next().getAsJsonObject() ;
                 // print email of the user
-                System.out.println(obj.get("email")) ;
+                System.out.println(obj.get("id") + ": " +obj.get("email")) ;
             }
         } catch (IOException | InterruptedException e) {
             // print error stack trace 
