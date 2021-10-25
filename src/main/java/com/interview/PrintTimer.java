@@ -17,6 +17,7 @@ class PrintTimer extends TimerTask {
         /**
          * schedule an API call then print emails after deserializing json response
          */
+        System.out.println("Started new Iteration ...") ;
         // create an Http client
         HttpClient client = HttpClient.newHttpClient();
         // build request
